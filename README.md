@@ -37,12 +37,17 @@ Non-bug issues:
 
  * Slow [#10161](https://github.com/docker/docker/issues/10161)
  * No page sharing (e.g. same DLLs are loaded redundantly) http://comments.gmane.org/gmane.comp.sysutils.docker.devel/1384
+ * Docker says BtrFS is [Experimental](https://docs.docker.com/engine/userguide/storagedriver/btrfs-driver/). Red Hat says BtrFS is [Tech Preview](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.2_Release_Notes/technology-preview-file_systems.html).
 
 ### ZFS
 
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
 |---|---|---|---|---|---|---|
 |:white_check_mark: [#20153](https://github.com/docker/docker/issues/20153)|Some operations fail due to `EBUSY`|:neutral_face: Medium|:neutral_face: Medium|Daemon bug|[Update Docker daemon](https://github.com/docker/docker/commit/803e3d4d1e7b9f029bbe31a80197403bf4d27252)||
+
+Non-bug issues:
+
+ * Docker says ZFS is [not recommended for production](https://docs.docker.com/engine/userguide/storagedriver/zfs-driver/).
 
 ### DeviceMapper
 
