@@ -55,6 +55,7 @@ Non-bug issues:
 |---|---|---|---|---|---|---|
 |:white_check_mark: [#4036](https://github.com/docker/docker/issues/4036)|Mount fails|:scream: High|:smiley: Easy|udev sync disabled|Use a Docker daemon binary which supports udev sync|Confirm: `docker info | grep "Udev Sync Supported: true"`|
 |:white_large_square: [#5684](https://github.com/docker/docker/issues/5684)|Cannot restart containers after restaring the daemon|:scream: High|:smiley: Easy|Unanalyzed|None||
+|:white_large_square: [#20401](https://github.com/docker/docker/issues/20401)|Infinite “mount/remount” loop, which makes the system unresponsive|:scream: High|:scream: High|Unanalyzed (perhaps related to XFS)|None||
 
 Non-bug issues:
 
