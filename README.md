@@ -13,6 +13,7 @@ Picked up and categorized subjectively. Comments and pull requests are welcome.
 
 Non-bug issues:
 * AUFS is not available in the mainline kernel．Only a few distros (Ubuntu, Boot2Docker, ..) support AUFS, but even for Ubuntu, Canonical says ["AUFS will disappear"](https://lists.ubuntu.com/archives/ubuntu-devel/2012-March/034880.html).
+* No support for extended attributes ("xattrs"), and [might not ever get support](http://lkml.iu.edu/hypermail/linux/kernel/0902.3/01324.html) ([#1070](https://github.com/docker/docker/issues/1070), [#8460](https://github.com/docker/docker/issues/8460)).
 
 ### Overlay
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
