@@ -99,4 +99,4 @@ Links:
 ## Others
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
 |---|---|---|---|---|---|---|
-|:white_large_square: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST when you are using `-v /dev:/dev` (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|cgroup thing? (unrelated to storage drivers)|Spawn the docker daemon from systemd. Or do not use `-v /dev:/dev`||
+|:white_large_square: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST when you are using `-v /dev:/dev` (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|daemon bug related to mount namespace|Spawn the docker daemon from systemd. Or do not use `-v /dev:/dev`||
