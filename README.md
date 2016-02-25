@@ -96,7 +96,7 @@ Links:
 |---|---|---|---|---|---|---|
 |:white_large_square: [#18776](https://github.com/docker/docker/issues/18776)|TCP checksums are ignored|:scream: High|:scream: Hard|Kernel bug|[Update the kernel](https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=ce8c839b74e3017996fad4e1b7ba2e2625ede82f)|[blog](https://medium.com/vijay-pandurangan/linux-kernel-bug-delivers-corrupt-tcp-ip-data-to-mesos-kubernetes-docker-containers-4986f88f7a19)|
 
-## Unanalyzed
+## Others
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
 |---|---|---|---|---|---|---|
-|:white_large_square: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|Unanalyzed|None||
+|:white_large_square: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST when you are using `-v /dev:/dev` (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|cgroup thing? (unrelated to storage drivers)|Spawn the docker daemon from systemd. Or do not use `-v /dev:/dev`||
