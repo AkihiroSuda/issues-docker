@@ -33,7 +33,6 @@ Non-bug issues:
 |---|---|---|---|---|---|---|
 |:white_check_mark: [#19073](https://github.com/docker/docker/issues/19073)|`sendfile(2)` can be unkillable|:smiley: Low|:smiley: Easy|BtrFS bug|None|Not likely to happen in production, but needs consideration for public PaaS|
 |:white_large_square: [#20080](https://github.com/docker/docker/issues/20080)|cgroups kmem limit leads crash and data corruption|:scream: High|:smiley: Easy?|Btrfs bug|Avoid kmem limit configuration?||
-|:white_large_square: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|Unanalyzed|None||
 
 Non-bug issues:
 
@@ -94,3 +93,8 @@ Links:
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
 |---|---|---|---|---|---|---|
 |:white_large_square: [#18776](https://github.com/docker/docker/issues/18776)|TCP checksums are ignored|:scream: High|:scream: Hard|Kernel bug|[Update the kernel](https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=ce8c839b74e3017996fad4e1b7ba2e2625ede82f)|[blog](https://medium.com/vijay-pandurangan/linux-kernel-bug-delivers-corrupt-tcp-ip-data-to-mesos-kubernetes-docker-containers-4986f88f7a19)|
+
+## Unanalyzed
+|Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
+|---|---|---|---|---|---|---|
+|:white_large_square: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|Unanalyzed|None||
