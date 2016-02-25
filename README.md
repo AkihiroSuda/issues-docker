@@ -33,6 +33,7 @@ Non-bug issues:
 |---|---|---|---|---|---|---|
 |:white_check_mark: [#19073](https://github.com/docker/docker/issues/19073)|`sendfile(2)` can be unkillable|:smiley: Low|:smiley: Easy|BtrFS bug|None|Not likely to happen in production, but needs consideration for public PaaS|
 |:white_large_square: [#20080](https://github.com/docker/docker/issues/20080)|cgroups kmem limit leads crash and data corruption|:scream: High|:smiley: Easy?|Btrfs bug|Avoid kmem limit configuration?||
+|:white_large_square: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|Unanalyzed|None||
 
 Non-bug issues:
 
