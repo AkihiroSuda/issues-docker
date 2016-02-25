@@ -23,6 +23,7 @@ Non-bug issues:
 |:white_large_square: [#19082](https://github.com/docker/docker/issues/19082)|Weird behavior after removing the current directory|:smiley: Low|:smiley: Easy|Overlay Bug|None (Workaround: [patch](https://lkml.org/lkml/2016/1/8/482))||
 |:white_large_square: [#19647](https://github.com/docker/docker/issues/19647)|Untar fails intermittently|:scream: High|:scream: Hard|Unanalyzed (Overlay bug related to symbolic links?)|None||
 |:white_large_square: [#19758](https://github.com/docker/docker/issues/19758)|Daemon hangs up after frequent `docker run`|:scream: High|:scream: Hard|Unanalyzed (Overlay bug related to the number of processors?)|None||
+|:white_large_square: [#20604](https://github.com/docker/docker/issues/20604)|Container cannot be started|:neutral_face: Medium|:scream: Hard|Unanalyzed|None|Possibly identical to [#16902](https://github.com/docker/docker/issues/16902)|
 
 Non-bug issues:
 * :scream: High inode usage
