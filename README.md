@@ -18,7 +18,7 @@ Non-bug issues:
 ### Overlay
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
 |---|---|---|---|---|---|---|
-|:white_large_square: [#10180](https://github.com/docker/docker/issues/10180)|File corruption|:scream: High|:scream: Hard|Unanalyzed|None|Especially RPMs are affected|
+|:white_large_square: [#10180](https://github.com/docker/docker/issues/10180)|RPMDB corruption|:scream: High|:scream: Hard|[Expected overlay behavior](https://bugzilla.redhat.com/show_bug.cgi?id=1213602#c0)|Use yum-utils-1.1.31-33.el7 (included in RHEL 7.2) or later. [Kernel patch](https://github.com/portworx/overlayfs) is also available.||
 |:white_large_square: [#12080](https://github.com/docker/docker/issues/12080)|Cannot use UNIX domain sockets|:neutral_face: Medium|:smiley: Easy|Overlay Bug|None (Workaround: [patch](https://github.com/docker/docker/issues/12080#issuecomment-146946771))||
 |:white_large_square: [#12327](https://github.com/docker/docker/issues/12327)|pip fails|:scream: High|:smiley: Easy|Overlay Bug|None (Workaround 1: [`--ignore-installed`](https://github.com/docker/docker/issues/12327#issuecomment-187158265), Workaround 2: [patch(unconfirmed yet?)](https://bugzilla.kernel.org/show_bug.cgi?id=109611))||
 |:white_large_square: [#19082](https://github.com/docker/docker/issues/19082)|Weird behavior after removing the current directory|:smiley: Low|:smiley: Easy|Overlay Bug|None (Workaround: [patch](https://lkml.org/lkml/2016/1/8/482))||
