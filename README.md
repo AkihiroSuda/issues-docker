@@ -10,6 +10,8 @@ Picked up and categorized subjectively from https://github.com/docker/docker/iss
 |:white_check_mark: [#18180](https://github.com/docker/docker/issues/18180)|A process becomes a zombie and hangs up |:scream: High|:scream: Hard(multiprocessor)<br> :smiley: Easy(uniprocessor)|Compatibility between the kernel and AUFS|[Update the kernel (AUFS >= 20160111)](https://github.com/docker/docker/issues/18180#issuecomment-187583209)|Especially Java apps and MongoDB are affected|
 |:white_large_square: [#20199](https://github.com/docker/docker/issues/20199)|`fcntl(F_SETFL, O_APPEND)` is ignored and hence data can be corrupted|:scream: High|:smiley: Easy|AUFS bug|None (Workaround: [patch](https://github.com/docker/docker/issues/20199#issuecomment-182944585))|Especially Dovecot is affected|
 |:white_large_square: [#20240](https://github.com/docker/docker/issues/20240)|Weird permission even though `dirperm1` is enabled|:neutral_face: Medium|:scream: Hard|Unanalyzed|None||
+|:white_large_square: [#20199](https://github.com/docker/docker/issues/20199)|`fcntl(F_SETFL, O_APPEND)` is ignored and hence data can be corrupted|:scream: High|:smiley: Easy|AUFS bug|None (Workaround: [patch](https://github.com/docker/docker/issues/20199#issuecomment-182944585))|Especially Dovecot is affected|
+|:white_large_square: [AUFS ML 2016-03-08](https://sourceforge.net/p/aufs/mailman/message/34917261/)|Hang up related to `O_DIRECT`|:scream: High|:smiley: Easy|Unanalyzed|None|Percona is known to be affected|
 
 Non-bug issues:
 * AUFS is not available in the mainline kernel．Only a few distros (Ubuntu, Boot2Docker, ..) support AUFS, but even for Ubuntu, Canonical says ["AUFS will disappear"](https://lists.ubuntu.com/archives/ubuntu-devel/2012-March/034880.html).
