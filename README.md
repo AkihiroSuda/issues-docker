@@ -11,7 +11,6 @@ Picked up and categorized subjectively from https://github.com/docker/docker/iss
 |:white_large_square: [#20199](https://github.com/docker/docker/issues/20199)|`fcntl(F_SETFL, O_APPEND)` is ignored and hence data can be corrupted|:scream: High|:smiley: Easy|AUFS bug|None (Workaround: [patch](https://github.com/docker/docker/issues/20199#issuecomment-182944585))|Dovecot is known to be affected|
 |:white_large_square: [#20240](https://github.com/docker/docker/issues/20240)|Weird permission even though `dirperm1` is enabled|:neutral_face: Medium|:scream: Hard|Unanalyzed|None||
 |:white_large_square: [AUFS ML 2016-03-08](https://sourceforge.net/p/aufs/mailman/message/34917261/)|Hang up related to `O_DIRECT`|:scream: High|:smiley: Easy|Unanalyzed|None|Percona is known to be affected|
-|:white_large_square: [#21555](https://github.com/docker/docker/issues/21555)|`docker build` fails intermittently|:scream: High|:scream: Hard|Unanalyzed|None||
 
 Non-bug issues:
 * AUFS is not available in the mainline kernel．Only a few distros (Ubuntu, Boot2Docker, ..) support AUFS, but even for Ubuntu, Canonical says ["AUFS will disappear"](https://lists.ubuntu.com/archives/ubuntu-devel/2012-March/034880.html).
@@ -104,6 +103,7 @@ Links:
 |:white_check_mark: [#17720](https://github.com/docker/docker/issues/17720)|Docker daemon 1.9 serious performance issue|:scream: High|:scream: Hard|?|Use Docker 1.10||
 |:white_large_square: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST when you are using `-v /dev:/dev` (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|daemon bug related to mount namespace|Spawn the docker daemon from systemd. Or do not use `-v /dev:/dev`||
 |:white_large_square: [#20836](https://github.com/docker/docker/issues/20836)|Daemon hangs up after frequent `docker run`|:scream: High|:scream: Hard|Unanalyzed|None||
+|:white_large_square: [#21555](https://github.com/docker/docker/issues/21555)|`docker build` fails intermittently|:scream: High|:scream: Hard|Unanalyzed|None||
 
 Non-bug issues:
  * `docker ps` is sometimes slow due to lock: [#19328](https://github.com/docker/docker/issues/19328)
