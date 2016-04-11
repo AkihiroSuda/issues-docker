@@ -103,7 +103,8 @@ Links:
 |:white_check_mark: [#17720](https://github.com/docker/docker/issues/17720)|Docker daemon 1.9 serious performance issue|:scream: High|:scream: Hard|?|Use Docker 1.10||
 |:white_large_square: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST when you are using `-v /dev:/dev` (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|daemon bug related to mount namespace|Spawn the docker daemon from systemd. Or do not use `-v /dev:/dev`||
 |:white_large_square: [#20836](https://github.com/docker/docker/issues/20836)|Daemon hangs up after frequent `docker run`|:scream: High|:scream: Hard|Unanalyzed|None||
-|:white_large_square: [#21555](https://github.com/docker/docker/issues/21555)|`docker build` fails intermittently|:scream: High|:scream: Hard|Unanalyzed|None||
+|:white_large_square: [#21555](https://github.com/docker/docker/issues/21555)|`docker build` fails intermittently|:scream: High|:scream: Hard|DiffDriver bug|[Patch available](https://github.com/docker/docker/issues/21555#issuecomment-203707574)|
+|:white_large_square: [#20600](https://github.com/docker/docker/issues/20600)|`cat /dev/zero` leads to out of memory|:scream: High|:smiley: Easy|stdio handling issue|None||
 
 Non-bug issues:
  * `docker ps` is sometimes slow due to lock: [#19328](https://github.com/docker/docker/issues/19328)
