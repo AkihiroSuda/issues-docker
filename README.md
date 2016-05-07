@@ -102,7 +102,7 @@ Links:
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
 |---|---|---|---|---|---|---|
 |:white_large_square: [#20600](https://github.com/docker/docker/issues/20600)|`cat /dev/zero` leads to out of memory|:scream: High|:smiley: Easy|logger's stdio handling issue|Do not use logging|Related: [#18057](https://github.com/docker/docker/issues/18057), [#21181](https://github.com/docker/docker/issues/21181)|
-|:white_large_square: [#22497](https://github.com/docker/docker/issues/22497)|container cannot be stopped if many logs are being printed |:scream: High|:screan: Hard|logger's stdio handling issue|||
+|:white_large_square: [#22497](https://github.com/docker/docker/issues/22497)|container cannot be stopped if many logs are being printed |:scream: High|:scream: Hard|logger's stdio handling issue|||
 |:white_large_square: [#22502](https://github.com/docker/docker/issues/22502)|logging blocks the container|:scream: High|:smiley: Easy|logger's stdio handling issue||affected versions: >= 1.10.0|
 
 ## Others
