@@ -98,6 +98,13 @@ Links:
 |---|---|---|---|---|---|---|
 |:white_large_square: [#18776](https://github.com/docker/docker/issues/18776)|TCP checksums are ignored|:scream: High|:scream: Hard|Kernel bug|[Use Linux 4.4 or later](https://github.com/torvalds/linux/commit/ce8c839b74e3017996fad4e1b7ba2e2625ede82f)|[blog](https://medium.com/vijay-pandurangan/linux-kernel-bug-delivers-corrupt-tcp-ip-data-to-mesos-kubernetes-docker-containers-4986f88f7a19)|
 
+## Logging
+|Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
+|---|---|---|---|---|---|---|
+|:white_large_square: [#20600](https://github.com/docker/docker/issues/20600)|`cat /dev/zero` leads to out of memory|:scream: High|:smiley: Easy|logger's stdio handling issue|Do not use logging|Related: [#18057](https://github.com/docker/docker/issues/18057), [#21181](https://github.com/docker/docker/issues/21181)|
+|:white_large_square: [#22497](https://github.com/docker/docker/issues/22497)|container cannot be stopped if many logs are being printed |:scream: High|:screan: Hard|logger's stdio handling issue|||
+|:white_large_square: [#22502](https://github.com/docker/docker/issues/22502)|logging blocks the container|:scream: High|:smiley: Easy|logger's stdio handling issue||affected versions: >= 1.10.0|
+
 ## Others
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
 |---|---|---|---|---|---|---|
@@ -106,9 +113,6 @@ Links:
 |:white_check_mark: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST when you are using `-v /dev:/dev` (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|daemon bug related to mount namespace|Use Docker 1.11.1. (Or Spawn the docker daemon from systemd. Or do not use `-v /dev:/dev`)||
 |:white_check_mark: [#20836](https://github.com/docker/docker/issues/20836)|Daemon hangs up after frequent `docker run`|:scream: High|:scream: Hard|Daemon bug|Use Docker 1.11.1||
 |:white_large_square: [#21555](https://github.com/docker/docker/issues/21555)|`docker build` fails intermittently|:scream: High|:scream: Hard|DiffDriver bug|[Patch available](https://github.com/docker/docker/issues/21555#issuecomment-203707574)|
-|:white_large_square: [#20600](https://github.com/docker/docker/issues/20600)|`cat /dev/zero` leads to out of memory|:scream: High|:smiley: Easy|logger's stdio handling issue|Do not use logging|Related: [#18057](https://github.com/docker/docker/issues/18057), [#21181](https://github.com/docker/docker/issues/21181)|
-|:white_large_square: [#22497](https://github.com/docker/docker/issues/22497)|container cannot be stopped if many logs are being printed |:scream: High|:screan: Hard|logger's stdio handling issue|||
-|:white_large_square: [#22502](https://github.com/docker/docker/issues/22502)|logging blocks the container|:scream: High|:smiley: Easy|logger's stdio handling issue||affected versions: >= 1.10.0|
 
 Non-bug issues:
  * `docker ps` is sometimes slow due to lock: [#19328](https://github.com/docker/docker/issues/19328)
