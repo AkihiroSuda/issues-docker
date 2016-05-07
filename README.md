@@ -107,6 +107,7 @@ Links:
 |:white_check_mark: [#20836](https://github.com/docker/docker/issues/20836)|Daemon hangs up after frequent `docker run`|:scream: High|:scream: Hard|Daemon bug|Use Docker 1.11.1||
 |:white_large_square: [#21555](https://github.com/docker/docker/issues/21555)|`docker build` fails intermittently|:scream: High|:scream: Hard|DiffDriver bug|[Patch available](https://github.com/docker/docker/issues/21555#issuecomment-203707574)|
 |:white_large_square: [#20600](https://github.com/docker/docker/issues/20600)|`cat /dev/zero` leads to out of memory|:scream: High|:smiley: Easy|logger's stdio handling issue|Do not use logging|Related: [#18057](https://github.com/docker/docker/issues/18057), [#21181](https://github.com/docker/docker/issues/21181)|
+|:white_large_square: [#22502](https://github.com/docker/docker/issues/22502)|logging blocks the container|:scream: High|:smiley: Easy|logger's stdio handling issue||affected versions: >= 1.10.0|
 
 Non-bug issues:
  * `docker ps` is sometimes slow due to lock: [#19328](https://github.com/docker/docker/issues/19328)
