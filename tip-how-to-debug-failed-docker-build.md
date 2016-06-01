@@ -4,7 +4,7 @@ Append `sh -c "$HANDLER"` to handle failures
 
 ```dockerfile
 FROM alpine:latest
-ENV HANDLER 'echo build failed. You can debug this container by running \`docker exec -it THIS_CONTAINER_NAME sh\`. \(available for 1 hour\); sleep 3600'
+ENV HANDLER 'echo build failed. You can debug this container by running \`docker exec -it THIS_CONTAINER_ID sh\`. \(available for 1 hour\); sleep 3600'
 
 
 RUN echo "something good 1 happened" || sh -c "$HANDLER"
@@ -33,5 +33,5 @@ Step 5 : RUN echo "something good 3 happened" || sh -c "$HANDLER"
 Step 6 : RUN echo "something bad happend"; false || sh -c "$HANDLER"
  ---> Running in 834cc509987e
 something bad happend
-build failed. You can debug this container by running `docker exec -it THIS_CONTAINER_NAME sh`. (available for 1 hour)
+build failed. You can debug this container by running `docker exec -it THIS_CONTAINER_ID sh`. (available for 1 hour)
 ```
