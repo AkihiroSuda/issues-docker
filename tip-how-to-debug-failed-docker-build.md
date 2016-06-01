@@ -18,7 +18,7 @@ $ docker build -t tmp1 .
 Sending build context to Docker daemon 2.048 kB
 Step 1 : FROM alpine:latest
  ---> 13e1761bf172
-Step 2 : ENV HANDLER 'echo build failed. You can debug this container by running \`docker exec -it THIS_CONTAINER_NAME sh\`. \(available for 1 hour\); sleep 3600'
+Step 2 : ENV HANDLER 'echo build failed. You can debug this container by running \`docker exec -it THIS_CONTAINER_ID sh\`. \(available for 1 hour\); sleep 3600'
  ---> Using cache
  ---> 4f0f82d8901f
 Step 3 : RUN echo "something good 1 happened" || sh -c "$HANDLER"
