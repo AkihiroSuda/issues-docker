@@ -29,7 +29,7 @@ Non-bug issues:
 |:white_check_mark: [machine#3327](https://github.com/docker/machine/issues/3327)|chmod fails with EPERM|:smiley: Low|:smiley: Easy|Overlay Bug|Use [Linux 4.5](https://github.com/torvalds/linux/commit/b81de061fa59f17d2730aabb1b84419ef3913810) or later||
 
 Non-bug issues:
-* :scream: High inode usage
+* :scream: High inode usage (resolved in overlay2, which will be available in [Docker 1.12](https://github.com/docker/docker/pull/22126/files))
 * Red Hat says OverlayFS is [Tech Preview](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.2_Release_Notes/technology-preview-file_systems.html)
 
 ### BtrFS
