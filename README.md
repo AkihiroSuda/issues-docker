@@ -4,7 +4,7 @@ Picked up and categorized subjectively from https://github.com/docker/docker/iss
 
 :white_large_square: = Open (maybe not up-to-date, please check the link by yourself!) 
 
-:white_square_button: = Mostly resolved (ditto)
+:white_square_button: = Mostly resolved (ditto, plus subjective)
 
 :white_check_mark: = Resolved
 
@@ -103,7 +103,7 @@ Links:
 ## Network
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
 |---|---|---|---|---|---|---|
-|:white_large_square: [#18776](https://github.com/docker/docker/issues/18776)|TCP checksums are ignored|:scream: High|:scream: Hard|Kernel bug|[Use Linux 4.4 or later](https://github.com/torvalds/linux/commit/ce8c839b74e3017996fad4e1b7ba2e2625ede82f)|[blog](https://medium.com/vijay-pandurangan/linux-kernel-bug-delivers-corrupt-tcp-ip-data-to-mesos-kubernetes-docker-containers-4986f88f7a19)|
+|:white_square_button: [#18776](https://github.com/docker/docker/issues/18776)|TCP checksums are ignored|:scream: High|:scream: Hard|Kernel bug|[Use Linux 4.4 or later](https://github.com/torvalds/linux/commit/ce8c839b74e3017996fad4e1b7ba2e2625ede82f)|[blog](https://medium.com/vijay-pandurangan/linux-kernel-bug-delivers-corrupt-tcp-ip-data-to-mesos-kubernetes-docker-containers-4986f88f7a19)|
 
 ## Logging
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
