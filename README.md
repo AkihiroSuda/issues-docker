@@ -33,6 +33,7 @@ Non-bug issues:
 |:white_large_square: [#19647](https://github.com/docker/docker/issues/19647), [coreos/bugs#1095](https://github.com/coreos/bugs/issues/1095)|Untar fails intermittently|:scream: High|:scream: Hard|Overlay Bug|None|Analysis is progress in [coreos/bugs#1095](https://github.com/coreos/bugs/issues/1095#issuecomment-233793361)|
 |:white_large_square: [#19758](https://github.com/docker/docker/issues/19758)|Daemon hangs up after frequent `docker run`|:scream: High|:scream: Hard|Unanalyzed (Overlay bug related to the number of processors?)|None||
 |:white_large_square: [#20640](https://github.com/docker/docker/issues/20640)|Container cannot be started|:neutral_face: Medium|:scream: Hard|Unanalyzed|None|Possibly identical to [#16902](https://github.com/docker/docker/issues/16902)|
+|:white_square_button: [#21555](https://github.com/docker/docker/issues/21555)|`docker build` fails intermittently|:scream: High|:scream: Hard|DiffDriver bug|Resolved in Overlay2 by design. [Patch available](https://github.com/docker/docker/issues/21555#issuecomment-203707574) for overlay1|
 |:white_check_mark: [machine#3327](https://github.com/docker/machine/issues/3327)|chmod fails with EPERM|:smiley: Low|:smiley: Easy|Overlay Bug|Use [Linux 4.5](https://github.com/torvalds/linux/commit/b81de061fa59f17d2730aabb1b84419ef3913810) or later||
 
 Non-bug issues:
@@ -119,7 +120,6 @@ Links:
 |:white_check_mark: [#17720](https://github.com/docker/docker/issues/17720)|Docker daemon 1.9 serious performance issue|:scream: High|:scream: Hard|?|Use Docker 1.10||
 |:white_check_mark: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST when you are using `-v /dev:/dev` (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|daemon bug related to mount namespace|Use Docker 1.11.1. (Or Spawn the docker daemon from systemd. Or do not use `-v /dev:/dev`)||
 |:white_check_mark: [#20836](https://github.com/docker/docker/issues/20836)|Daemon hangs up after frequent `docker run`|:scream: High|:scream: Hard|Daemon bug|Use Docker 1.11.1||
-|:white_large_square: [#21555](https://github.com/docker/docker/issues/21555)|`docker build` fails intermittently|:scream: High|:scream: Hard|DiffDriver bug|[Patch available](https://github.com/docker/docker/issues/21555#issuecomment-203707574)|
 
 Non-bug issues:
  * `docker ps` is sometimes slow due to lock: [#19328](https://github.com/docker/docker/issues/19328)
