@@ -4,8 +4,10 @@ This can be a problem for a project like this:
 ```
 proj/
 proj/app-main/
-proj/example/ex01/Dockerfile <-- this depends on ../../app-main
-proj/example/ex02/Dockerfile <-- ditto
+proj/example/ex01/app-main   <-- symlink to ../../app-main
+proj/example/ex01/Dockerfile <-- this depends on app-main
+proj/example/ex01/app-main
+proj/example/ex02/Dockerfile
 ```
 
 Workaround:
