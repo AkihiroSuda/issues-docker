@@ -2,6 +2,12 @@
 
 Picked up and categorized subjectively from https://github.com/docker/docker/issues. Comments and pull requests are welcome.
 
+:white_large_square: = Open (maybe not up-to-date, please check the link by yourself!) 
+
+:white_square_button: = Mostly resolved (ditto)
+
+:white_check_mark: = Resolved
+
 ## Storage Drivers
 ### AUFS
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
@@ -22,7 +28,7 @@ Non-bug issues:
 |---|---|---|---|---|---|---|
 |:white_large_square: [#10180](https://github.com/docker/docker/issues/10180)|RPMDB corruption|:scream: High|:neutral_face: Medium|[Expected overlay behavior](https://bugzilla.redhat.com/show_bug.cgi?id=1213602#c0)|Use yum-{utils,plugins-ovl}-1.1.31-33.el7 (included in RHEL 7.2) or later. [Kernel patch](https://github.com/portworx/overlayfs) is also available.||
 |:white_check_mark: [#12080](https://github.com/docker/docker/issues/12080)|Cannot use UNIX domain sockets|:neutral_face: Medium|:smiley: Easy|Overlay Bug|Use [Linux 4.7-rc4](https://github.com/torvalds/linux/commit/30402c8949934fbaca07d9c20074d0d7a5a8385f) or later||
-|:white_large_square: [#12327](https://github.com/docker/docker/issues/12327)|pip fails|:scream: High|:smiley: Easy|Overlay Bug|None (Workaround 1: [`--ignore-installed`](https://github.com/docker/docker/issues/12327#issuecomment-187158265), Workaround 2: [patch(unconfirmed yet?)](https://bugzilla.kernel.org/show_bug.cgi?id=109611))||
+|:white_square_button: [#12327](https://github.com/docker/docker/issues/12327)|pip fails|:scream: High|:smiley: Easy|Overlay Bug|Use [Linux 4.5](https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=45d11738969633ec07ca35d75d486bf2d8918df6) or later||
 |:white_check_mark: [#19082](https://github.com/docker/docker/issues/19082)|Weird behavior after removing the current directory|:smiley: Low|:smiley: Easy|Overlay Bug|Use [Linux 4.5](https://github.com/torvalds/linux/commit/ce9113bbcbf45a57c082d6603b9a9f342be3ef74) or later||
 |:white_large_square: [#19647](https://github.com/docker/docker/issues/19647)|Untar fails intermittently|:scream: High|:scream: Hard|Unanalyzed (Overlay bug related to symbolic links?)|None|Possibly related to [#12327](https://github.com/docker/docker/issues/12327)? But this is non-deterministic..|
 |:white_large_square: [#19758](https://github.com/docker/docker/issues/19758)|Daemon hangs up after frequent `docker run`|:scream: High|:scream: Hard|Unanalyzed (Overlay bug related to the number of processors?)|None||
