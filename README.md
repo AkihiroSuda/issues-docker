@@ -116,7 +116,6 @@ Links:
 ## Others
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
 |---|---|---|---|---|---|---|
-|:white_large_square: [#5684](https://github.com/docker/docker/issues/5684)|Cannot restart containers after restaring the daemon|:scream: High|:scream: Hard|Unanalyzed|None||
 |:white_check_mark: [#17720](https://github.com/docker/docker/issues/17720)|Docker daemon 1.9 serious performance issue|:scream: High|:scream: Hard|?|Use Docker 1.10||
 |:white_check_mark: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST when you are using `-v /dev:/dev` (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|daemon bug related to mount namespace|Use Docker 1.11.1. (Or Spawn the docker daemon from systemd. Or do not use `-v /dev:/dev`)||
 |:white_check_mark: [#20836](https://github.com/docker/docker/issues/20836)|Daemon hangs up after frequent `docker run`|:scream: High|:scream: Hard|Daemon bug|Use Docker 1.11.1||
