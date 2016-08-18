@@ -76,6 +76,10 @@ Non-bug issues:
  * Slow [#10161](https://github.com/docker/docker/issues/10161)
  * No page sharing (e.g. same DLLs are loaded redundantly) http://comments.gmane.org/gmane.comp.sysutils.docker.devel/1384
 
+### Storage driver test tool
+
+ * [dmcgowan/dsdbench](https://github.com/dmcgowan/dsdbench): Docker Storage Driver Benchmarks and Tests
+
 ### So which storage driver should I use?
 
 It totally depends on your workload, but Docker, Inc. says AUFS and Devicemapper (direct-lvm) are "production-ready".
