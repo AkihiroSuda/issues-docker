@@ -37,6 +37,7 @@ Non-bug issues:
 |:white_check_mark: [#20950](https://github.com/docker/docker/issues/20950)|/dev/console: operation not permitted|:scream: High|:smiley: Easy|[Kernel Bug](https://github.com/docker/docker/issues/20950#issuecomment-201335412)|Use recent Linux kernels||
 |:white_square_button: [#21555](https://github.com/docker/docker/issues/21555)|`docker build` fails intermittently|:scream: High|:scream: Hard|DiffDriver bug|Resolved in Overlay2 by design. [Patch available](https://github.com/docker/docker/issues/21555#issuecomment-203707574) for overlay1|
 |:white_check_mark: [#24913](https://github.com/docker/docker/issues/24913)|permissions broken after chown|:neutral_face: Medium|:smiley: Easy|Overlay Bug|Use [Linux 4.6](https://github.com/docker/docker/issues/24913#issuecomment-240666349) or later||
+|:white_square_button: [#25244](https://github.com/docker/docker/issues/25244)|opaque flag not reset after directory copy up|:neutral_face: Medium|:smiley: Easy|Overlay Bug|None but [patch](https://bugzilla.kernel.org/show_bug.cgi?id=151291) is available|npm is known to be affected|
 |:white_check_mark: [machine#3327](https://github.com/docker/machine/issues/3327)|chmod fails with EPERM|:smiley: Low|:smiley: Easy|Overlay Bug|Use [Linux 4.5](https://github.com/torvalds/linux/commit/b81de061fa59f17d2730aabb1b84419ef3913810) or later||
 
 Non-bug issues:
