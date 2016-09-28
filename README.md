@@ -22,7 +22,7 @@ Picked up and categorized subjectively from https://github.com/docker/docker/iss
 Non-bug issues:
 * AUFS is not available in the mainline kernel．Only a few distros (Ubuntu, Boot2Docker, ..) support AUFS, but even for Ubuntu, Canonical says ["AUFS will disappear"](https://lists.ubuntu.com/archives/ubuntu-devel/2012-March/034880.html).
 * No support for extended attributes ("xattrs"), and [might not ever get support](http://lkml.iu.edu/hypermail/linux/kernel/0902.3/01324.html) ([#1070](https://github.com/docker/docker/issues/1070), [#8460](https://github.com/docker/docker/issues/8460)).
-* `rename(2)` is not fully supported [#25409](https://github.com/docker/docker/issues/25409)
+* `rename(2)` is not fully supported ( see also [#aufs-overlay-common](#aufs-overlay-common) )
 
 ### Overlay
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
@@ -43,7 +43,23 @@ Non-bug issues:
 Non-bug issues:
 * :scream: High inode usage (resolved in overlay2, which will be available in [Docker 1.12](https://github.com/docker/docker/pull/22126/files))
 * Red Hat says OverlayFS is [Tech Preview](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.2_Release_Notes/technology-preview-file_systems.html)
-* `rename(2)` is not fully supported [#25409](https://github.com/docker/docker/issues/25409)
+* `rename(2)` is not fully supported ( see also [#aufs-overlay-common](#aufs-overlay-common) )
+
+### AUFS / Overlay common
+
+Non-bug issue: `rename(2)` is not fully supported [#25409](https://github.com/docker/docker/issues/25409)
+
+reports about the incompatible behavior of `rename(2)` from the real world
+
+|Software|Report|
+|---|---|
+|Apache Kudu|https://issues.apache.org/jira/browse/KUDU-1419|
+|CernVM-FS|https://sft.its.cern.ch/jira/browse/CVM-651|
+|GPG|https://github.com/docker/docker/issues/26317|
+|NPM|https://github.com/npm/npm/issues/9863|
+|Samba|https://bugzilla.samba.org/show_bug.cgi?id=9966|
+
+
 
 ### BtrFS
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
