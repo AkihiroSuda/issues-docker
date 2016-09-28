@@ -129,6 +129,7 @@ Links:
 ## Network
 |Issue|Abstract|Impact|Reproducibility|Cause|Solution|Notes|
 |---|---|---|---|---|---|---|
+|:white_square_button: [#5618](https://github.com/docker/docker/issues/5618)|hang up with `unregister_netdevice: waiting for lo to become free`|:scream: High|:scream: Hard|Kernel bug|[Use Linux 4.8 or later](https://github.com/torvalds/linux/commit/751eb6b6042a596b0080967c1a529a9fe98dac1d)|[The patch will be backported to old kernels in major distros](https://github.com/docker/docker/issues/5618#issuecomment-248317966)|
 |:white_check_mark: [#18776](https://github.com/docker/docker/issues/18776)|TCP checksums are ignored|:scream: High|:scream: Hard|Kernel bug|[Use Linux 4.4 or later](https://github.com/torvalds/linux/commit/ce8c839b74e3017996fad4e1b7ba2e2625ede82f)|[blog](https://medium.com/vijay-pandurangan/linux-kernel-bug-delivers-corrupt-tcp-ip-data-to-mesos-kubernetes-docker-containers-4986f88f7a19)|
 
 ## Logging
