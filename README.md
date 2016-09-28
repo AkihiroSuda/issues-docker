@@ -149,3 +149,4 @@ Links:
 
 Non-bug issues:
  * `docker ps` is sometimes slow due to lock: [#19328](https://github.com/docker/docker/issues/19328)
+ * `EBUSY` on `docker rm` in Linux < 3.19: [#26510](https://github.com/docker/docker/issues/26510)
