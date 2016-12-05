@@ -147,6 +147,7 @@ Links:
 |:white_check_mark: [#17720](https://github.com/docker/docker/issues/17720)|Docker daemon 1.9 serious performance issue|:scream: High|:scream: Hard|?|Use Docker 1.10||
 |:white_check_mark: [#20670](https://github.com/docker/docker/issues/20670)|/dev/pts unmounted on the HOST when you are using `-v /dev:/dev` (After that you can no longer open SSH nor xterm)|:scream: High|:smiley: Easy|daemon bug related to mount namespace|Use Docker 1.11.1. (Or Spawn the docker daemon from systemd. Or do not use `-v /dev:/dev`)||
 |:white_check_mark: [#20836](https://github.com/docker/docker/issues/20836)|Daemon hangs up after frequent `docker run`|:scream: High|:scream: Hard|Daemon bug|Use Docker 1.11.1||
+|:white_check_mark: [#28936](https://github.com/docker/docker/issues/28936)|Strange permission issues with named containers on 1.12.3 |:scream: High|:smiley: Easy|Daemon bug related to SELinux)|Use [Docker 1.12.4](https://github.com/docker/docker/pull/23024)||
 
 Non-bug issues:
  * `docker ps` is sometimes slow due to lock: [#19328](https://github.com/docker/docker/issues/19328)
