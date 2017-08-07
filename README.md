@@ -18,6 +18,7 @@ Picked up and categorized subjectively from https://github.com/docker/docker/iss
 |:white_check_mark: [#20240](https://github.com/docker/docker/issues/20240)|Weird permission even though `dirperm1` is enabled|:neutral_face: Medium|:scream: Hard|AUFS bug|[Update the kernel (AUFS >= 20160905)](https://github.com/docker/docker/issues/20240#issuecomment-244639386)||
 |:white_large_square: [AUFS ML 2016-03-08](https://sourceforge.net/p/aufs/mailman/message/34917261/)|Hang up related to `O_DIRECT`|:scream: High|:smiley: Easy|Unanalyzed|None|Percona is known to be affected|
 |:white_large_square: [#24309](https://github.com/docker/docker/issues/24309)|Unable to remove files previously committed |:scream: High|:smiley: Easy|Unanalyzed|[This article seems related, but perhaps slightly different](https://github.com/yokogawa-k/aufs-directories-undeletable-bug)(Japanese)|
+|:white_large_square: [#34361](https://github.com/docker/docker/issues/34361)|AUFS + XFS hangs up |:scream: High|:smiley: Easy|AUFS bug||
 
 Non-bug issues:
 * AUFS is not available in the mainline kernel．Only a few distros (Ubuntu, Boot2Docker, ..) support AUFS, but even for Ubuntu, Canonical says ["AUFS will disappear"](https://lists.ubuntu.com/archives/ubuntu-devel/2012-March/034880.html).
