@@ -46,6 +46,7 @@ Non-bug issues:
 * :scream: High inode usage (resolved in overlay2, which will be available in [Docker 1.12](https://github.com/docker/docker/pull/22126/files))
 * Red Hat says  ["OverlayFS remains a Technology Preview in Red Hat Enterprise Linux 7.3 under most circumstances"](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.3_Release_Notes/technology_previews_file_systems.html)
 * `rename(2)` is not fully supported ( see also [#aufs--overlay-common](#aufs--overlay-common) )
+* MySQL doesn't work without `touch`-ing files under `/var/lib/mysql`: https://github.com/docker/for-linux/issues/72#issuecomment-319904698
 
 ### AUFS / Overlay common
 
